@@ -17,6 +17,10 @@ export default function NavLinks() {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
 
+  const handleLinkClick = () => {
+    setIsOpen(false);
+  };
+
   return (
     <nav className="w-full bg-white shadow-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -77,6 +81,7 @@ export default function NavLinks() {
                     : 'text-blue-500 hover:bg-blue-700 hover:text-white'
                 )}
                 aria-current={pathname === link.href ? 'page' : undefined}
+                onClick={handleLinkClick} // close menu on link click
               >
                 {link.name}
               </Link>
