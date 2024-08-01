@@ -4,9 +4,8 @@ import { lusitana } from "./ui/fonts";
 
 export default function Home() {
   return (
-    <main>
-      
-      <p>Hello</p>
+    <main>      
+      <p>Home Page</p>
     </main>
   );
 }
