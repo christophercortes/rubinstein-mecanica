@@ -30,10 +30,10 @@ export default function NavLinks() {
               <Link href="/" onClick={handleLinkClick}>
               <Image
                 src="/logo.jpg"
-                width={70} // Adjusted width for small screens
-                height={70} // Adjusted height for small screens
+                width={80} // Adjusted width for small screens
+                height={80} // Adjusted height for small screens
                 alt="Rubinstein Logo"
-                className="bg-white p-1 rounded-md md:w-55 md:h-55 lg:w-35 lg:h-35" // Adjusted sizes for medium and large screens
+                className="bg-white p-1 rounded-md md:w-50 md:h-50 lg:w-30 lg:h-30" // Adjusted sizes for medium and large screens
               />
             </Link>
           </div>
