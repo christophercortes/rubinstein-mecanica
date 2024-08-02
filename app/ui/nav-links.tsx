@@ -7,6 +7,7 @@ import { useState } from "react";
 import clsx from "clsx";
 
 const links = [
+  {name: 'Home', href: '/'},
   { name: 'Quienes Somos', href: '/quienes-somos' },
   { name: 'Nuestros Servicios', href: '/nuestros-servicios' },
   { name: 'Taller Multimarcas', href: '/taller-multimarcas' },
