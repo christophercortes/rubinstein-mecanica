@@ -1,6 +1,7 @@
 'use client';
 
 import Link from "next/link";
+import Image from "next/image";
 import { PhoneIcon, EnvelopeIcon, MapPinIcon } from '@heroicons/react/24/outline';
 
 export default function Footer() {
@@ -28,6 +29,13 @@ export default function Footer() {
                                 <EnvelopeIcon className="w-6 h-6" aria-hidden="true" />
                                 <span>Email</span>
                             </Link>
+                                <Image
+                                    src="/logo.jpg"
+                                    width={80} // Adjusted width for small screens
+                                    height={80} // Adjusted height for small screens
+                                    alt="Rubinstein Logo"
+                                    className="bg-white p-1 rounded-md md:w-50 md:h-50 lg:w-30 lg:h-30" // Adjusted sizes for medium and large screens
+                                />
                         </div>
                     </div>
 
