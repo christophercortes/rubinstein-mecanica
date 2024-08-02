@@ -4,9 +4,11 @@ import { lusitana } from "./ui/fonts";
 
 export default function Home() {
   return (
-    <main className="p-4">
+    <main className="pt-20 px-5">
       <section className="text-center mb-8">
-        <h1 className="text-4xl font-bold mb-4">Bienvenidos a Rubinstein Mecanica</h1>
+        <h1 className="text-4xl font-bold mb-4">
+          Bienvenidos a Rubinstein Mecanica Automotriz
+        </h1>
       </section>
       <section className="max-w-screen-xl mx-auto px-4">
         <div className="relative mb-8">
