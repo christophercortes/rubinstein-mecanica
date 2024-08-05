@@ -3,7 +3,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: 'Quienes Somos',
-}
+};
 
 export default function AboutUs() {
   return (
@@ -12,7 +12,7 @@ export default function AboutUs() {
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">Quiénes Somos</h1>
         <div className="relative overflow-hidden bg-gray-100 rounded-lg shadow-lg mb-8">
           <Image
-            src="/flaco.webp"
+            src=""
             width={1000}
             height={700}
             alt="Rubinstein Logo"
