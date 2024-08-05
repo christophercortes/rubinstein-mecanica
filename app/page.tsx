@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import styles from "@/app/ui/home.module.css";
 import { lusitana } from "./ui/fonts";
 import { Metadata } from "next";
@@ -12,7 +13,7 @@ export default function Home() {
     <main className="pt-20 px-5">
       <section className="text-center mb-8">
         <h1 className="text-4xl font-bold mb-4">
-          Bienvenidos a Rubinstein Mecanica Automotriz
+          Bienvenidos a Rubinstein Mecanica Automotriz!
         </h1>
       </section>
       <section className="max-w-screen-xl mx-auto px-4">
@@ -37,10 +38,23 @@ export default function Home() {
             />
           </div>
           <div className="flex-1 text-base">
-            <h2 className="text-2xl font-semibold mb-4">¿Qué es Taller Gestión Profesional?</h2>
-            <p>
-              TALLERGP es un ERP para la gestión de talleres online, con el que podrá manejar todas las tareas administrativas de su taller, con un coste reducido, unas máximas prestaciones y un soporte permanente. Podrá gestionar las citas previas, visualizar su agenda y la de sus empleados, emitir presupuestos, albaranes, facturas, órdenes de reparación, enviar campañas de marketing por SMS o correos electrónicos, enviar facturas o presupuestos a sus clientes, llevar un control del stock, tener un control documental de sus documentos importantes, como albaranes de compra, fichas de vehículos. Podrá adjuntar fotos a las órdenes, directamente desde el móvil o una tableta, sin pasar por un ordenador, o firmar los documentos con una tableta de firma Wacom.
+            <h2 className="text-2xl font-semibold mb-4">
+              Propuesta de valor
+            </h2>
+            <h2 className="text-xl md-4">
+              Despreocupese... <br /> Nosotros nos encargamos de su vehiculo<br />
+            </h2>
+            <p className="leading-relaxed mb-4">
+              En Rubinstein nos motiva entregar un servicio integral para su vehículo, para que no
+              invierta tiempo valioso en la búsqueda de un taller serio y capacitado para dar solución
+              a sus problemas mecánicos, o en la compra de repuestos, o simplemente necesitas que se hagan cargo de la mantención.
+              Nosotros nos encargamos de realizar todos los arreglos mecánicos, eléctricos, lubricantes, 
+              mantenciones, limpieza, tramites de permiso y todo lo que sea necesario para que su vehículo funcione a la perfección.
+              Nos aseguramos de entregar un servicio de calidad y con garantía de satisfacción.
             </p>
+            <Link href="/contacto" className="inline-block mt-4 mb-8 px-6 py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition">
+              Contáctanos
+            </Link>
           </div>
         </div>
       </section>
