@@ -37,24 +37,26 @@ export default function Home() {
               className="object-cover rounded-lg"
             />
           </div>
-          <div className="flex-1 text-base">
-            <h2 className="text-2xl font-semibold mb-4">
-              Propuesta de valor
-            </h2>
-            <h2 className="text-xl md-4">
-              Despreocupese... <br /> Nosotros nos encargamos de su vehiculo<br />
-            </h2>
-            <p className="leading-relaxed mb-4">
-              En Rubinstein nos motiva entregar un servicio integral para su vehículo, para que no
-              invierta tiempo valioso en la búsqueda de un taller serio y capacitado para dar solución
-              a sus problemas mecánicos, o en la compra de repuestos, o simplemente necesitas que se hagan cargo de la mantención.
-              Nosotros nos encargamos de realizar todos los arreglos mecánicos, eléctricos, lubricantes, 
-              mantenciones, limpieza, tramites de permiso y todo lo que sea necesario para que su vehículo funcione a la perfección.
-              Nos aseguramos de entregar un servicio de calidad y con garantía de satisfacción.
-            </p>
-            <Link href="/contacto" className="inline-block mt-4 mb-8 px-6 py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition">
-              Contáctanos
-            </Link>
+          <div className="flex flex-col md:flex-row gap-8">
+            <div className="flex-1 text-base">
+              <h2 className={`${lusitana.className} text-2xl font-semibold mb-4`}>
+                Propuesta de valor
+              </h2>
+              <h2 className={`${lusitana.className} text-xl mb-4`}>
+                Despreocupese... <br /> Nosotros nos encargamos de su vehículo<br />
+              </h2>
+              <p className="leading-relaxed mb-4">
+                En Rubinstein nos motiva entregar un servicio integral para su vehículo, para que no
+                invierta tiempo valioso en la búsqueda de un taller serio y capacitado para dar solución
+                a sus problemas mecánicos, o en la compra de repuestos, o simplemente necesitas que se hagan cargo de la mantención.
+                Nosotros nos encargamos de realizar todos los arreglos mecánicos, eléctricos, lubricantes,
+                mantenciones, limpieza, trámites de permiso y todo lo que sea necesario para que su vehículo funcione a la perfección.
+                Nos aseguramos de entregar un servicio de calidad y con garantía de satisfacción.
+              </p>
+              <Link href="/contacto" className="inline-block mt-4 mb-8 px-6 py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition button">
+                Contáctanos
+              </Link>
+            </div>
           </div>
         </div>
       </section>
