@@ -43,10 +43,10 @@ export default function Home() {
           <div className="flex-shrink-0">
             <Image
               src="/auto-shop.jpg"
-              width={300}
-              height={400}
+              width={200}
+              height={300}
               alt="Trabajador en taller"
-              className="object-cover rounded-lg w-full h-auto"
+              className="object-cover rounded-lg w-full max-w-sm md:max-w-xs lg:max-w-sm mx-auto"
             />
           </div>
           <div className="flex-1 text-sm md:text-base lg:text-lg">
