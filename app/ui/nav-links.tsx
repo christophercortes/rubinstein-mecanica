@@ -31,10 +31,10 @@ export default function NavLinks() {
               <Link href="/" onClick={handleLinkClick}>
                 <Image
                   src="/logo.jpg"
-                  width={80} // Adjusted width for small screens
-                  height={80} // Adjusted height for small screens
+                  width={120} // Increased width
+                  height={120} // Increased height
                   alt="Rubinstein Logo"
-                  className="bg-black p-1 rounded-md" // Adjusted background for small screens
+                  className="bg-black p-1 rounded-md"
                 />
               </Link>
             </div>

@@ -65,15 +65,16 @@ export default function Footer() {
                 </div>
 
                 {/* Footer Bottom Section with Logo */}
-                {/* <div className="mt-8 border-t border-gray-700 pt-4 text-center">
+                <div className="mt-8 border-t border-gray-700 pt-8 text-center">
                     <Image
                         src="/logo.jpg"
-                        width={120} // Adjusted size for footer
-                        height={120} // Adjusted size for footer
+                        width={120}
+                        height={120}
                         alt="Rubinstein Logo"
-                        className="mx-auto bg-white p-1 rounded-md"
+                        className="mx-auto bg-white p-2 rounded-full"
                     />
-                </div> */}
+                    <p className="mt-4 text-gray-400">&copy; 2024 Rubinstein Mecanica Automotriz. Todos los derechos reservados.</p>
+                </div>
             </div>
         </footer>
     );
