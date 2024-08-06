@@ -13,8 +13,8 @@ export default function Home() {
       <section className="relative mb-8">
         <div className="relative">
           <Image
-            src="/Car-Station.jpg"
-            width={1000}
+            src="/vlad.jpg"
+            width={1200}
             height={700}
             alt="Mecánico trabajando"
             className="object-cover w-full h-auto"
@@ -41,13 +41,13 @@ export default function Home() {
       <section className="max-w-screen-xl mx-auto px-4 md:px-6 lg:px-8 mb-12">
         <div className="flex flex-col md:flex-row gap-6 md:gap-8 lg:gap-12">
           <div className="flex-shrink-0">
-            <Image
+            {/* <Image
               src="/auto-shop.jpg"
-              width={200}
-              height={300}
+              width={300}
+              height={400}
               alt="Trabajador en taller"
               className="object-cover rounded-lg w-full max-w-sm md:max-w-xs lg:max-w-sm mx-auto"
-            />
+            /> */}
           </div>
           <div className="flex-1 text-sm md:text-base lg:text-lg">
             <h2 className={`${lusitana.className} text-xl md:text-2xl lg:text-3xl font-semibold mb-4`}>
