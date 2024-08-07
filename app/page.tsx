@@ -21,10 +21,10 @@ export default function Home() {
         <div className="">
           <Image
             src="/example.jpg"
-            width={1200}
+            width={1000}
             height={800} // Adjust height to maintain aspect ratio
             alt="Mecánico trabajando"
-            className="w-full h-auto"
+            className="w-full h-auto lg:w-3/4 mx-auto"
             priority
           />
           <div className="flex items-center justify-center">
