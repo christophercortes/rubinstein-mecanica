@@ -16,7 +16,7 @@ export default function AboutUs() {
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 p-4">
             <Image
-              src="/mechanic.jpg"
+              src="/acerca/mechanic.jpg"
               width={700}
               height={400}
               alt="Rubinstein Logo"

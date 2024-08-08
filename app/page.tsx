@@ -20,7 +20,7 @@ export default function Home() {
       <section className="mb-12">
         <div className="">
           <Image
-            src="/example.jpg"
+            src="/home/example.jpg"
             width={1000}
             height={800} // Adjust height to maintain aspect ratio
             alt="Mecánico trabajando"
@@ -68,7 +68,7 @@ export default function Home() {
         <div className="flex flex-col lg:flex-row items-center justify-around gap-8">
           <div className="flex flex-col items-center">
             <Image
-              src="/company.jpg"
+              src="/home/company.jpg"
               width={700}
               height={300} // Adjust height to maintain aspect ratio
               alt="Mecánico trabajando"
@@ -81,7 +81,7 @@ export default function Home() {
           </div>
           <div className="flex flex-col items-center">
             <Image
-              src="/individual.jpg"
+              src="/home/individual.jpg"
               width={700}
               height={300} // Adjust height to maintain aspect ratio
               alt="Mecánico trabajando"
