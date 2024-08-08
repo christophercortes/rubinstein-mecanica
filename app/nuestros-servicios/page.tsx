@@ -7,7 +7,7 @@ export default function Services() {
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8">Nuestros Servicios</h1>
       </section>
 
-      <section className="grid grid-cols-1 md:grid-cols-2 gap-8 px-4 md:px-8 lg:px-10 xl:px-16">
+      <section className="grid grid-cols-1 mt-20 md:grid-cols-2 gap-8 px-4 md:px-8 lg:px-10 xl:px-16">
         <div className="text-center md:text-left">
           <Image
             src="/servicios/grua.jpeg"
@@ -29,7 +29,7 @@ export default function Services() {
         </div>
       </section>
       <section className="grid grid-cols-1 md:grid-cols-2 gap-8 px-4 md:px-8 lg:px-10 xl:px-16 mt-16">
-        <div className="order-last md:order-first flex flex-col justify-center">
+        <div className="lg:max-w-[600px] lg:mx-auto xl:max-w-[700px] flex flex-col justify-center">
           <h2 className="text-2xl md:text-3xl font-semibold mb-4">Servicio Scanner</h2>
           <h3 className="text-xl font-bold mb-4 text-gray-600">Chequeo OBD1 y OBD2</h3>
           <p className="text-lg leading-relaxed">
@@ -48,7 +48,7 @@ export default function Services() {
           />
         </div>
       </section>
-      <section className="grid grid-cols-1 md:grid-cols-2 gap-8 px-4 md:px-8 lg:px-10 xl:px-16">
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-8 px-4 md:px-8 lg:px-10 xl:px-16 mt-16">
         <div className="text-center md:text-left">
           <Image
             src="/servicios/pintura.jpeg"
@@ -70,7 +70,7 @@ export default function Services() {
         </div>
       </section>
       <section className="grid grid-cols-1 md:grid-cols-2 gap-8 px-4 md:px-8 lg:px-10 xl:px-16 mt-16">
-        <div className="order-last md:order-first flex flex-col justify-center">
+        <div className="lg:max-w-[600px] lg:mx-auto xl:max-w-[700px] flex flex-col justify-center">
           <h2 className="text-2xl md:text-3xl font-semibold mb-4">Revisión Técnica</h2>
           <h3 className="text-xl font-bold mb-4 text-gray-600">Chequeo y trámite</h3>
           <p className="text-lg leading-relaxed">
@@ -91,7 +91,7 @@ export default function Services() {
           />
         </div>
       </section>
-      <section className="grid grid-cols-1 md:grid-cols-2 gap-8 px-4 md:px-8 lg:px-10 xl:px-16">
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-8 px-4 md:px-8 lg:px-10 xl:px-16 mt-16">
         <div className="text-center md:text-left">
           <Image
             src="/servicios/verificado.jpeg"
@@ -112,7 +112,7 @@ export default function Services() {
         </div>
       </section>
       <section className="grid grid-cols-1 md:grid-cols-2 gap-8 px-4 md:px-8 lg:px-10 xl:px-16 mt-16">
-        <div className="order-last md:order-first flex flex-col justify-center">
+        <div className="lg:max-w-[600px] lg:mx-auto xl:max-w-[700px] flex flex-col justify-center">
           <h2 className="text-2xl md:text-3xl font-semibold mb-4">Repuestos</h2>
           <h3 className="text-xl font-bold mb-4 text-gray-600">Stock de Repuestos</h3>
           <p className="text-lg leading-relaxed">
@@ -132,7 +132,7 @@ export default function Services() {
           />
         </div>
       </section>
-      <section className="grid grid-cols-1 md:grid-cols-2 gap-8 px-4 md:px-8 lg:px-10 xl:px-16">
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-8 px-4 md:px-8 lg:px-10 xl:px-16 mt-16">
         <div className="text-center md:text-left">
           <Image
             src="/servicios/oil.jpg"
@@ -154,7 +154,7 @@ export default function Services() {
         </div>
       </section>
       <section className="grid grid-cols-1 md:grid-cols-2 gap-8 px-4 md:px-8 lg:px-10 xl:px-16 mt-16">
-        <div className="order-last md:order-first flex flex-col justify-center">
+        <div className="lg:max-w-[600px] lg:mx-auto xl:max-w-[700px] flex flex-col justify-center">
           <h2 className="text-2xl md:text-3xl font-semibold mb-4">Seguimiento en Línea</h2>
           <h3 className="text-xl font-bold mb-4 text-gray-600">Bitácora de Mantenciones</h3>
           <p className="text-lg leading-relaxed">
@@ -180,7 +180,7 @@ export default function Services() {
       </section>
 
       <section className="grid grid-cols-1 md:grid-cols-2 gap-8 px-4 md:px-8 lg:px-10 xl:px-16 mt-16">
-        <div className="order-last md:order-first flex flex-col justify-center">
+        <div className="lg:max-w-[600px] lg:mx-auto xl:max-w-[700px] flex flex-col justify-center">
           <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-gray-800">Instalación de Inmovilizadores</h2>
           <h3 className="text-xl font-bold mb-4 text-gray-600">Corta Corriente / Antiportazo</h3>
           <p className="text-lg leading-relaxed text-gray-700">
@@ -201,7 +201,7 @@ export default function Services() {
         </div>
       </section>
 
-      <section className="grid grid-cols-1 md:grid-cols-2 gap-8 px-4 md:px-8 lg:px-10 xl:px-16">
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-8 px-4 md:px-8 lg:px-10 xl:px-16 mt-16">
         <div className="text-center md:text-left">
           <Image
             src="/servicios/alarm.jpg"
@@ -222,7 +222,7 @@ export default function Services() {
         </div>
       </section>
       <section className="grid grid-cols-1 md:grid-cols-2 gap-8 px-4 md:px-8 lg:px-10 xl:px-16 mt-16">
-        <div className="order-last md:order-first flex flex-col justify-center">
+        <div className="lg:max-w-[600px] lg:mx-auto xl:max-w-[700px] flex flex-col justify-center">
           <h2 className="text-2xl md:text-3xl font-semibold mb-4">Radio y Cámara</h2>
           <h3 className="text-xl font-bold mb-4 text-gray-600">Instalación de Radio Android y Cámara de Retroceso</h3>
           <p className="text-lg leading-relaxed">
@@ -241,7 +241,7 @@ export default function Services() {
           />
         </div>
       </section>
-      <section className="grid grid-cols-1 md:grid-cols-2 gap-8 px-4 md:px-8 lg:px-10 xl:px-16">
+      <section className="grid grid-cols-1 pb-10 mb-20 md:grid-cols-2 gap-8 px-4 md:px-8 lg:px-10 xl:px-16 mt-16">
         <div className="text-center md:text-left">
           <Image
             src="/servicios/start.jpg"
