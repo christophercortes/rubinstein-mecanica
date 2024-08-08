@@ -31,7 +31,7 @@ export const carBrand: Car[] = [
     },
     {
         id: 'Mercedes',
-        image_url: '/Mercedes-BENZ.jpg',
+        image_url: '/MERCEDES-BENZ.jpg',
     },
     {
         id: 'Daewoo',
@@ -155,6 +155,6 @@ export const carBrand: Car[] = [
     },
     {
         id: 'Mazda',
-        image_url: '/MAZDA.JPG',
+        image_url: '/MAZDA.jpg',
     },
 ]
