@@ -30,7 +30,7 @@ export default function Services() {
       </section>
       <div className="border-t border-gray-300 mt-8 mb-8"></div>
 
-      <section className="grid grid-cols-1 bg-gray-50 px-4 py-8 md:grid-cols-2 gap-12 px-4 md:px-8 lg:px-10 xl:px-16 mt-16">
+      <section className="grid grid-cols-1 bg-gray-50 px-4 py-8 md:grid-cols-2 gap-12 px-4 md:px-8 lg:px-10 xl:px-16 mt-10">
         <div className="lg:max-w-[600px] lg:mx-auto xl:max-w-[700px] flex flex-col justify-center">
           <h2 className="text-2xl md:text-3xl font-semibold mb-4">Servicio Scanner</h2>
           <h3 className="text-xl font-bold mb-4 text-gray-600">Chequeo OBD1 y OBD2</h3>
@@ -52,7 +52,7 @@ export default function Services() {
       </section>
       <div className="border-t border-gray-300 mt-8 mb-8"></div>
 
-      <section className="grid grid-cols-1 bg-gray-50 px-4 py-8 md:grid-cols-2 gap-12 px-4 md:px-8 lg:px-10 xl:px-16 mt-16">
+      <section className="grid grid-cols-1 bg-gray-50 px-4 py-8 md:grid-cols-2 gap-12 px-4 md:px-8 lg:px-10 xl:px-16 mt-10">
         <div className="text-center md:text-left">
           <Image
             src="/servicios/pintura.jpeg"
@@ -75,7 +75,7 @@ export default function Services() {
       </section>
       <div className="border-t border-gray-300 mt-8 mb-8"></div>
 
-      <section className="grid grid-cols-1 bg-gray-50 px-4 py-8 md:grid-cols-2 gap-12 px-4 md:px-8 lg:px-10 xl:px-16 mt-16">
+      <section className="grid grid-cols-1 bg-gray-50 px-4 py-8 md:grid-cols-2 gap-12 px-4 md:px-8 lg:px-10 xl:px-16 mt-10">
         <div className="lg:max-w-[600px] lg:mx-auto xl:max-w-[700px] flex flex-col justify-center">
           <h2 className="text-2xl md:text-3xl font-semibold mb-4">Revisión Técnica</h2>
           <h3 className="text-xl font-bold mb-4 text-gray-600">Chequeo y trámite</h3>
@@ -99,7 +99,7 @@ export default function Services() {
       </section>
       <div className="border-t border-gray-300 mt-8 mb-8"></div>
 
-      <section className="grid grid-cols-1 bg-gray-50 px-4 py-8 md:grid-cols-2 gap-12 px-4 md:px-8 lg:px-10 xl:px-16 mt-16">
+      <section className="grid grid-cols-1 bg-gray-50 px-4 py-8 md:grid-cols-2 gap-12 px-4 md:px-8 lg:px-10 xl:px-16 mt-10">
         <div className="text-center md:text-left">
           <Image
             src="/servicios/verificado.jpeg"
@@ -121,7 +121,7 @@ export default function Services() {
       </section>
       <div className="border-t border-gray-300 mt-8 mb-8"></div>
 
-      <section className="grid grid-cols-1 bg-gray-50 px-4 py-8 md:grid-cols-2 gap-12 px-4 md:px-8 lg:px-10 xl:px-16 mt-16">
+      <section className="grid grid-cols-1 bg-gray-50 px-4 py-8 md:grid-cols-2 gap-12 px-4 md:px-8 lg:px-10 xl:px-16 mt-10">
         <div className="lg:max-w-[600px] lg:mx-auto xl:max-w-[700px] flex flex-col justify-center">
           <h2 className="text-2xl md:text-3xl font-semibold mb-4">Repuestos</h2>
           <h3 className="text-xl font-bold mb-4 text-gray-600">Stock de Repuestos</h3>
@@ -144,7 +144,7 @@ export default function Services() {
       </section>
       <div className="border-t border-gray-300 mt-8 mb-8"></div>
 
-      <section className="grid grid-cols-1 bg-gray-50 px-4 py-8 md:grid-cols-2 gap-12 px-4 md:px-8 lg:px-10 xl:px-16 mt-16">
+      <section className="grid grid-cols-1 bg-gray-50 px-4 py-8 md:grid-cols-2 gap-12 px-4 md:px-8 lg:px-10 xl:px-16 mt-10">
         <div className="text-center md:text-left">
           <Image
             src="/servicios/oil.jpg"
@@ -167,7 +167,7 @@ export default function Services() {
       </section>
       <div className="border-t border-gray-300 mt-8 mb-8"></div>
 
-      <section className="grid grid-cols-1 bg-gray-50 px-4 py-8 md:grid-cols-2 gap-12 px-4 md:px-8 lg:px-10 xl:px-16 mt-16">
+      <section className="grid grid-cols-1 bg-gray-50 px-4 py-8 md:grid-cols-2 gap-12 px-4 md:px-8 lg:px-10 xl:px-16 mt-10">
         <div className="lg:max-w-[600px] lg:mx-auto xl:max-w-[700px] flex flex-col justify-center">
           <h2 className="text-2xl md:text-3xl font-semibold mb-4">Seguimiento en Línea</h2>
           <h3 className="text-xl font-bold mb-4 text-gray-600">Bitácora de Mantenciones</h3>
@@ -195,7 +195,7 @@ export default function Services() {
         <h1 className="text-2xl mb-20 mt-20 md:text-3xl lg:text-4xl font-bold mb-8">Instalaciones</h1>
       </section>
 
-      <section className="grid grid-cols-1 bg-gray-50 px-4 py-8 md:grid-cols-2 gap-12 px-4 md:px-8 lg:px-10 xl:px-16 mt-16">
+      <section className="grid grid-cols-1 bg-gray-50 px-4 py-8 md:grid-cols-2 gap-12 px-4 md:px-8 lg:px-10 xl:px-16 mt-10">
         <div className="lg:max-w-[600px] lg:mx-auto xl:max-w-[700px] flex flex-col justify-center">
           <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-gray-800">Instalación de Inmovilizadores</h2>
           <h3 className="text-xl font-bold mb-4 text-gray-600">Corta Corriente / Antiportazo</h3>
@@ -218,7 +218,7 @@ export default function Services() {
       </section>
       <div className="border-t border-gray-300 mt-8 mb-8"></div>
 
-      <section className="grid grid-cols-1 bg-gray-50 px-4 py-8 md:grid-cols-2 gap-12 px-4 md:px-8 lg:px-10 xl:px-16 mt-16">
+      <section className="grid grid-cols-1 bg-gray-50 px-4 py-8 md:grid-cols-2 gap-12 px-4 md:px-8 lg:px-10 xl:px-16 mt-10">
         <div className="text-center md:text-left">
           <Image
             src="/servicios/alarm.jpg"
@@ -240,7 +240,7 @@ export default function Services() {
       </section>
       <div className="border-t border-gray-300 mt-8 mb-8"></div>
 
-      <section className="grid grid-cols-1 bg-gray-50 px-4 py-8 md:grid-cols-2 gap-12 px-4 md:px-8 lg:px-10 xl:px-16 mt-16">
+      <section className="grid grid-cols-1 bg-gray-50 px-4 py-8 md:grid-cols-2 gap-12 px-4 md:px-8 lg:px-10 xl:px-16 mt-10">
         <div className="lg:max-w-[600px] lg:mx-auto xl:max-w-[700px] flex flex-col justify-center">
           <h2 className="text-2xl md:text-3xl font-semibold mb-4">Radio y Cámara</h2>
           <h3 className="text-xl font-bold mb-4 text-gray-600">Instalación de Radio Android y Cámara de Retroceso</h3>
@@ -262,7 +262,7 @@ export default function Services() {
       </section>
       <div className="border-t border-gray-300 mt-8 mb-8"></div>
 
-      <section className="grid grid-cols-1 bg-gray-50 px-4 py-8 md:grid-cols-2 gap-12 px-4 md:px-8 lg:px-10 xl:px-16 mt-16">
+      <section className="grid grid-cols-1 bg-gray-50 px-4 py-8 md:grid-cols-2 gap-12 px-4 md:px-8 lg:px-10 xl:px-16 mt-10">
         <div className="text-center md:text-left">
           <Image
             src="/servicios/start.jpg"
