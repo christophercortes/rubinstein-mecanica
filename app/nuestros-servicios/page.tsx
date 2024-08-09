@@ -199,7 +199,7 @@ export default function Services() {
       <section className="grid grid-cols-1 bg-gray-50 px-4 py-8 md:grid-cols-2 gap-12 px-4 md:px-8 lg:px-10 xl:px-16 mt-10">
         <div className="lg:max-w-[600px] lg:mx-auto xl:max-w-[700px] flex flex-col justify-center">
           <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-gray-800">Instalación de Inmovilizadores</h2>
-          <h3 className="text-xl font-bold mb-4 text-gray-600">Corta Corriente / Antiportazo</h3>
+          <h3 className="text-xl font-bold mb-4 text-gray-600">Corta Corriente / Antiportonazo</h3>
           <p className="text-lg leading-relaxed text-gray-700">
             En Rubinstein nos preocupa tu seguridad y la de tu vehículo. Por ello, ofrecemos la instalación de inmovilizadores
             para proteger tu vehículo de robos o portonazos. Nuestro sistema es indetectable por delincuentes, inhackeable y

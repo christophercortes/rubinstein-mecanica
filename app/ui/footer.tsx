@@ -24,7 +24,7 @@ export default function Footer() {
                                 <span>Ubicación Taller</span>
                             </Link>
                             <Link
-                                href="mailto:christopher.cortes.eduardo@gmail.com"
+                                href="mailto:rubinsteincontact@gmail.com"
                                 className="flex items-center space-x-2 text-white hover:text-gray-300 transition"
                             >
                                 <EnvelopeIcon className="w-6 h-6 text-white" aria-hidden="true" /> {/* Adjusted icon size */}
