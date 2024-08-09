@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Services() {
   return (
@@ -283,6 +284,18 @@ export default function Services() {
         </div>
       </section>
       <div className="border-t border-gray-300 mt-8 mb-8"></div>
+      {/* WhatsApp Icon */}
+      <div className="fixed bottom-4 right-4 z-50">
+        <Link href="https://wa.me/56954316358">
+          <Image
+            src="/whatsapp.png"
+            width={50}
+            height={50}
+            alt="WhatsApp"
+            className="hover:opacity-80 transition"
+          />
+        </Link>
+      </div>
 
     </main>
   );

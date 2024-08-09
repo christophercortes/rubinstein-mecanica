@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import CarTable from "../ui/table";
 import { carBrand } from "../lib/carbrand-data";
 import { Metadata } from "next";
@@ -12,7 +13,7 @@ export default function AboutUs() {
     <main className="mt-10 pt-20 px-4 md:px-8 lg:px-16 bg-gray-50">
       <div className="max-w-4xl mx-auto">
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-center">Quiénes Somos</h1>
-        
+
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 p-4">
             <Image
@@ -40,10 +41,22 @@ export default function AboutUs() {
         <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-4">Marcas con las que Trabajamos</h2>
         <CarTable carBrand={carBrand} />
       </div>
-      
+
       <div className="mt-12 mb-12 text-center bg-navy-blue text-white py-8 px-4 rounded-lg shadow-md">
         <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-4">Todos los Vehículos con Checkout de Garantía</h2>
         <h3 className="text-xl md:text-2xl lg:text-3xl">Todos los trabajos con sello de garantía</h3>
+      </div>
+      {/* WhatsApp Icon */}
+      <div className="fixed bottom-4 right-4 z-50">
+        <Link href="https://wa.me/56954316358">
+          <Image
+            src="/whatsapp.png"
+            width={50}
+            height={50}
+            alt="WhatsApp"
+            className="hover:opacity-80 transition"
+          />
+        </Link>
       </div>
     </main>
   );

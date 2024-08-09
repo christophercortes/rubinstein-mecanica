@@ -10,7 +10,7 @@ const links = [
   { name: 'Home', href: '/' },
   { name: 'Quienes Somos', href: '/quienes-somos' },
   { name: 'Nuestros Servicios', href: '/nuestros-servicios' },
-  { name: 'Taller Multimarcas', href: '/taller-multimarcas' },
+  //{ name: 'Taller Multimarcas', href: '/taller-multimarcas' },
   { name: 'Contacto', href: '/contacto' },
 ];
 
