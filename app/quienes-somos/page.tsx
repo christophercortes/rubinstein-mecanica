@@ -29,7 +29,7 @@ export default function AboutUs() {
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-4">Trabajos Garantizados</h2>
             <p className="text-lg md:text-xl lg:text-2xl leading-relaxed">
               Contamos con un dotación de mecánicos calificados con una vasta experiencia, además cada vehículo antes
-              de salir del taller se vuelve a chequear por el mecánico jefe <b>Rodrigo Sáez</b>, Técnico Universitario en Mecánica
+              de salir del taller se vuelve a chequear por el mecánico jefe <b>Rodrigo Sáez Madrid</b>, Técnico Universitario en Mecánica
               Automotriz y Autotrónica, con más de 15 años en el rubro, para asegurarnos de entregar un servicio de calidad
               y con garantía. Características que identifican a nuestro taller, dando así confianza a nuestros clientes.
             </p>

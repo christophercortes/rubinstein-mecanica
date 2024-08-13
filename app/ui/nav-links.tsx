@@ -10,7 +10,7 @@ const links = [
   { name: 'Home', href: '/' },
   { name: 'Quienes Somos', href: '/quienes-somos' },
   { name: 'Nuestros Servicios', href: '/nuestros-servicios' },
-  //{ name: 'Taller Multimarcas', href: '/taller-multimarcas' },
+  { name: 'Taller Multimarcas', href: '/taller-multimarcas' },
   { name: 'Contacto', href: '/contacto' },
 ];
 
@@ -31,8 +31,8 @@ export default function NavLinks() {
               <Link href="/" onClick={handleLinkClick}>
                 <Image
                   src="/logo.jpg"
-                  width={100} // Adjust width if needed
-                  height={100} // Adjust height if needed
+                  width={100} // Ajustar ancho si es necesario 
+                  height={100} // Ajustar altura si es necesario
                   alt="Rubinstein Logo"
                 />
               </Link>
