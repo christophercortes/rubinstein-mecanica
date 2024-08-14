@@ -11,7 +11,7 @@ const links = [
   { name: 'Quienes Somos', href: '/quienes-somos' },
   { name: 'Nuestros Servicios', href: '/nuestros-servicios' },
   { name: 'Taller Multimarcas', href: '/taller-multimarcas' },
-  { name: 'Contacto', href: '/contacto' },
+  { name: 'Agenda', href: '/agenda' },
 ];
 
 export default function NavLinks() {
