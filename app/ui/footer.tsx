@@ -62,7 +62,7 @@ export default function Footer() {
                         width={100}
                         height={100}
                         alt="Rubinstein Logo"
-                        className="mx-auto bg-white p-2 border rounded-lg"
+                        className="mx-auto bg-white p-2 rounded-lg"
                     />
                     <p className="mt-4 text-gray-400">&copy; 2024 Rubinstein Mecanica Automotriz. Todos los derechos reservados.</p>
                 </div>
