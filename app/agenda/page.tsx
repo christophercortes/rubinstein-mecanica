@@ -1,10 +1,5 @@
 'use client';
 
-import { lusitana } from '@/app/ui/fonts';
-import { AtSymbolIcon, KeyIcon, ExclamationCircleIcon, UserIcon, HomeIcon } from '@heroicons/react/24/outline';
-import { ArrowRightIcon } from '@heroicons/react/20/solid';
-//import { Button } from './button';
-//import { userRegistration } from '@/app/lib/actions';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 
@@ -16,112 +11,71 @@ export default function RegisterForm() {
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
     setIsPending(true);
+    setErrorMessage(null);
+
     const formData = new FormData(event.target as HTMLFormElement);
-    
-  
-    setIsPending(false);
+
+    const data = {
+      fname: formData.get('fname'),
+      email: formData.get('email'),
+      phone: formData.get('phone'),
+    };
+
+    console.log('Form Data:', data); // Debugging line
+
+    try {
+      const response = await fetch('/api/sendemail', { // Ensure path is correct
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        alert('Tu mensaje se envió correctamente!');
+        (event.target as HTMLFormElement).reset();
+      } else {
+        setErrorMessage(result.message || 'Algo ocurrió mal');
+      }
+    } catch (error) {
+      setErrorMessage('Falló al enviar el email');
+    } finally {
+      setIsPending(false);
+    }
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-3 pt-20">
-      <div className="flex-1 rounded-lg bg-gray-50 px-6 pb-4 pt-8">
-        <h1 className={`${lusitana.className} mb-3 text-2xl`}>
-          Please register to continue.
+    <form onSubmit={handleSubmit} className="mt-20 pt-10 mb-20 pb-10 space-y-6 max-w-lg mx-auto">
+      <div className="rounded-lg bg-gray-50 p-6 shadow-md">
+        <h1 className="mb-5 text-3xl font-semibold text-center text-gray-900">
+          ¡CUÉNTANOS LA FECHA DE TU CITA Y TE CONFIRMAMOS!
         </h1>
-        <div className="w-full">
+        
+        <div className="space-y-4">
           <div>
-            <label className="mb-3 mt-5 block text-xs font-medium text-gray-900" htmlFor="first_name">
-              First Name
-            </label>
-            <div className="relative">
-              <input
-                className="peer block w-full rounded-md border border-gray-200 py-[9px] pl-10 text-sm outline-2 placeholder:text-gray-500"
-                id="fname"
-                type="text"
-                name="fname"
-                placeholder="Enter your first name"
-                required
-              />
-              <UserIcon className="pointer-events-none absolute left-3 top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-gray-500 peer-focus:text-gray-900" />
-            </div>
+            <label htmlFor="fname" className="block text-sm font-medium text-gray-700">Nombre*</label>
+            <input type="text" id="fname" name="fname" className="mt-1 block w-full rounded-md border border-gray-300 p-2.5 text-sm shadow-sm focus:border-blue-500 focus:ring-blue-500" placeholder="Nombre completo" required />
           </div>
-          <div className="mt-4">
-            <label className="mb-3 mt-5 block text-xs font-medium text-gray-900" htmlFor="last_name">
-              Last Name
-            </label>
-            <div className="relative">
-              <input
-                className="peer block w-full rounded-md border border-gray-200 py-[9px] pl-10 text-sm outline-2 placeholder:text-gray-500"
-                id="lname"
-                type="text"
-                name="lname"
-                placeholder="Enter your last name"
-                required
-              />
-              <UserIcon className="pointer-events-none absolute left-3 top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-gray-500 peer-focus:text-gray-900" />
-            </div>
+
+          <div>
+            <label htmlFor="email" className="block text-sm font-medium text-gray-700">Correo electrónico*</label>
+            <input type="email" id="email" name="email" className="mt-1 block w-full rounded-md border border-gray-300 p-2.5 text-sm shadow-sm focus:border-blue-500 focus:ring-blue-500" placeholder="Ingresa tu correo electrónico" required />
           </div>
-          <div className="mt-4">
-            <label className="mb-3 mt-5 block text-xs font-medium text-gray-900" htmlFor="email">
-              Email
-            </label>
-            <div className="relative">
-              <input
-                className="peer block w-full rounded-md border border-gray-200 py-[9px] pl-10 text-sm outline-2 placeholder:text-gray-500"
-                id="email"
-                type="email"
-                name="email"
-                placeholder="Enter your email address"
-                required
-              />
-              <AtSymbolIcon className="pointer-events-none absolute left-3 top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-gray-500 peer-focus:text-gray-900" />
-            </div>
-          </div>
-          <div className="mt-4">
-            <label className="mb-3 mt-5 block text-xs font-medium text-gray-900" htmlFor="password">
-              Password
-            </label>
-            <div className="relative">
-              <input
-                className="peer block w-full rounded-md border border-gray-200 py-[9px] pl-10 text-sm outline-2 placeholder:text-gray-500"
-                id="password"
-                type="password"
-                name="password"
-                placeholder="Enter password"
-                required
-                minLength={6}
-              />
-              <KeyIcon className="pointer-events-none absolute left-3 top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-gray-500 peer-focus:text-gray-900" />
-            </div>
-          </div>
-          <div className="mt-4">
-            <label className="mb-3 mt-5 block text-xs font-medium text-gray-900" htmlFor="address">
-              Address
-            </label>
-            <div className="relative">
-              <input
-                className="peer block w-full rounded-md border border-gray-200 py-[9px] pl-10 text-sm outline-2 placeholder:text-gray-500"
-                id="address"
-                type="text"
-                name="address"
-                placeholder="Enter your address"
-                required
-              />
-              <HomeIcon className="pointer-events-none absolute left-3 top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-gray-500 peer-focus:text-gray-900" />
-            </div>
+
+          <div>
+            <label htmlFor="phone" className="block text-sm font-medium text-gray-700">Teléfono*</label>
+            <input type="tel" id="phone" name="phone" className="mt-1 block w-full rounded-md border border-gray-300 p-2.5 text-sm shadow-sm focus:border-blue-500 focus:ring-blue-500" placeholder="Ingresa tu número de teléfono" required />
           </div>
         </div>
-        {/* <Button type="submit" className="mt-4 w-full" aria-disabled={isPending}>
-          Register <ArrowRightIcon className="ml-auto h-5 w-5 text-gray-50" />
-        </Button> */}
-        <div className="flex h-8 items-end space-x-1">
-          {errorMessage && (
-            <>
-              <ExclamationCircleIcon className="h-5 w-5 text-red-500" />
-              <p className="text-sm text-red-500">{errorMessage}</p>
-            </>
-          )}
-        </div>
+
+        <button type="submit" disabled={isPending} className="mt-6 w-full rounded-md bg-blue-600 py-2 text-white font-semibold shadow-md hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+          {isPending ? 'Enviando...' : 'Confirmar Cita'}
+        </button>
+
+        {errorMessage && <p className="mt-4 text-center text-red-500">{errorMessage}</p>}
       </div>
     </form>
   );

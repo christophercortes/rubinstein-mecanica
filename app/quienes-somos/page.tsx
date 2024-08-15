@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import CarTable from "../ui/table";
-import { carBrand } from "../lib/carbrand-data";
+
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -35,11 +34,6 @@ export default function AboutUs() {
             </p>
           </div>
         </div>
-      </div>
-
-      <div className="mt-12 text-center">
-        <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-4">Marcas con las que Trabajamos</h2>
-        <CarTable carBrand={carBrand} />
       </div>
 
       <div className="mt-12 mb-12 text-center bg-navy-blue text-white py-8 px-4 rounded-lg shadow-md">
