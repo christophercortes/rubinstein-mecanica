@@ -8,7 +8,63 @@ export default function Services() {
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8">Nuestros Servicios</h1>
       </section>
 
-      <section className="grid grid-cols-1 bg-gray-50 px-4 py-8 md:grid-cols-2 gap-12 px-4 md:px-8 lg:px-10 xl:px-16 mt-16">
+      {/* Icons Section */}
+      <section className="grid grid-cols-2 md:grid-cols-4 gap-8 px-4 md:px-8 lg:px-10 xl:px-16 mt-10">
+        <div className="text-center">
+          <Link href="#grua"
+            className="block text-gray-600 hover:text-gray-800">
+            <Image
+              src="/servicios/iconos/crane.png"
+              alt="grua"
+              width={80}
+              height={80}
+              className="w-12 h-12 mx-auto mb-4"
+            />
+            <p>Servicios de Grúa</p>
+          </Link>
+        </div>
+        <div className="text-center">
+          <Link href="#scanner"
+            className="block text-gray-600 hover:text-gray-800">
+            <Image
+              src="/servicios/iconos/scanner.png"
+              alt="scanner"
+              width={80}
+              height={80}
+              className="w-12 h-12 mx-auto mb-4"
+            />
+            <p>Servicio Scanner</p>
+          </Link>
+        </div>
+        <div className="text-center">
+          <Link href="#pintura"
+            className="block text-gray-600 hover:text-gray-800">
+            <Image
+              src="/servicios/iconos/paintcan.png"
+              alt="pintura"
+              width={80}
+              height={80}
+              className="w-12 h-12 mx-auto mb-4"
+            />
+            <p>Servicios de Pintura</p>
+          </Link>
+        </div>
+        <div className="text-center">
+          <Link href="#revision"
+            className="block text-gray-600 hover:text-gray-800">
+            <Image
+              src="/servicios/iconos/car_repair.png"
+              alt="revision"
+              width={80}
+              height={80}
+              className="w-12 h-12 mx-auto mb-4"
+            />
+            <p>Revisión Técnica</p>
+          </Link>
+        </div>     
+      </section>
+
+      <section id="grua" className="grid grid-cols-1 bg-gray-50 px-4 py-8 md:grid-cols-2 gap-12 px-4 md:px-8 lg:px-10 xl:px-16 mt-16">
         <div className="text-center md:text-left">
           <Image
             src="/servicios/grua.jpeg"
@@ -25,13 +81,13 @@ export default function Services() {
           <p className="text-lg leading-relaxed text-gray-700">
             Cuando alguno de nuestros clientes quede en panne o por alguna colisión menor o choque no pueda mover
             su vehículo y necesite rescate, nosotros nos encargamos de traer el vehículo a taller para el arreglo.
-            Solo debe llamarnos y nosotros coordinamos el servicio de grúa.
+            Solo debe llamarnos y nosotros coordinamos el servicio de grúa. <br /> <b>Servicio externo</b>
           </p>
         </div>
       </section>
       <div className="border-t border-gray-300 mt-8 mb-8"></div>
 
-      <section className="grid grid-cols-1 bg-gray-50 px-4 py-8 md:grid-cols-2 gap-12 px-4 md:px-8 lg:px-10 xl:px-16 mt-10">
+      <section id="scanner" className="grid grid-cols-1 bg-gray-50 px-4 py-8 md:grid-cols-2 gap-12 px-4 md:px-8 lg:px-10 xl:px-16 mt-10">
         <div className="lg:max-w-[600px] lg:mx-auto xl:max-w-[700px] flex flex-col justify-center">
           <h2 className="text-2xl md:text-3xl font-semibold mb-4">Servicio Scanner</h2>
           <h3 className="text-xl font-bold mb-4 text-gray-600">Chequeo OBD1 y OBD2</h3>
@@ -42,7 +98,7 @@ export default function Services() {
         </div>
         <div className="text-center md:text-left">
           <Image
-            src="/servicios/cardiagnostic.jpg"
+            src="/servicios/diagnostico.jpg"
             width={700}
             height={400}
             alt="Servicio Scanner"
@@ -53,7 +109,7 @@ export default function Services() {
       </section>
       <div className="border-t border-gray-300 mt-8 mb-8"></div>
 
-      <section className="grid grid-cols-1 bg-gray-50 px-4 py-8 md:grid-cols-2 gap-12 px-4 md:px-8 lg:px-10 xl:px-16 mt-10">
+      <section id="pintura" className="grid grid-cols-1 bg-gray-50 px-4 py-8 md:grid-cols-2 gap-12 px-4 md:px-8 lg:px-10 xl:px-16 mt-10">
         <div className="text-center md:text-left">
           <Image
             src="/servicios/pintura.jpeg"
@@ -70,13 +126,13 @@ export default function Services() {
           <p className="text-lg leading-relaxed text-gray-700">
             Cuando alguno de nuestros clientes sufra una colisión menor o choque y necesite arreglar su vehículo, en Rubinstein nos
             encargamos de gestionar con algún taller asociado el presupuesto y arreglo del siniestro del vehículo,
-            tanto en Desabolladura, pintura, parabrisas y vidrios.
+            tanto en Desabolladura, pintura, parabrisas y vidrios. <br /> <b>Servicio externo</b>
           </p>
         </div>
       </section>
       <div className="border-t border-gray-300 mt-8 mb-8"></div>
 
-      <section className="grid grid-cols-1 bg-gray-50 px-4 py-8 md:grid-cols-2 gap-12 px-4 md:px-8 lg:px-10 xl:px-16 mt-10">
+      <section id="revision" className="grid grid-cols-1 bg-gray-50 px-4 py-8 md:grid-cols-2 gap-12 px-4 md:px-8 lg:px-10 xl:px-16 mt-10">
         <div className="lg:max-w-[600px] lg:mx-auto xl:max-w-[700px] flex flex-col justify-center">
           <h2 className="text-2xl md:text-3xl font-semibold mb-4">Revisión Técnica</h2>
           <h3 className="text-xl font-bold mb-4 text-gray-600">Chequeo y trámite</h3>
@@ -89,7 +145,7 @@ export default function Services() {
         </div>
         <div className="text-center md:text-left">
           <Image
-            src="/servicios/trabajador.jpg"
+            src="/servicios/revision.jpg"
             width={700}
             height={400}
             alt="Revisión Técnica"
@@ -103,7 +159,7 @@ export default function Services() {
       <section className="grid grid-cols-1 bg-gray-50 px-4 py-8 md:grid-cols-2 gap-12 px-4 md:px-8 lg:px-10 xl:px-16 mt-10">
         <div className="text-center md:text-left">
           <Image
-            src="/servicios/verificado.jpeg"
+            src="/servicios/permiso.jpg"
             width={700}
             height={400}
             alt="Permiso de Circulación"
@@ -134,7 +190,7 @@ export default function Services() {
         </div>
         <div className="text-center md:text-left">
           <Image
-            src="/servicios/engine.jpg"
+            src="/servicios/repuestos.jpg"
             width={700}
             height={400}
             alt="Repuestos"
@@ -148,7 +204,7 @@ export default function Services() {
       <section className="grid grid-cols-1 bg-gray-50 px-4 py-8 md:grid-cols-2 gap-12 px-4 md:px-8 lg:px-10 xl:px-16 mt-10">
         <div className="text-center md:text-left">
           <Image
-            src="/servicios/oil.jpg"
+            src="/servicios/aceite.webp"
             width={700}
             height={400}
             alt="Mantenimiento"
@@ -222,7 +278,7 @@ export default function Services() {
       <section className="grid grid-cols-1 bg-gray-50 px-4 py-8 md:grid-cols-2 gap-12 px-4 md:px-8 lg:px-10 xl:px-16 mt-10">
         <div className="text-center md:text-left">
           <Image
-            src="/servicios/alarm.jpg"
+            src="/servicios/alarma.webp"
             width={700}
             height={400}
             alt="Alarma y Cierre"
@@ -252,7 +308,7 @@ export default function Services() {
         </div>
         <div className="text-center md:text-left">
           <Image
-            src="/servicios/radio.jpg"
+            src="/servicios/android-auto.webp"
             width={700}
             height={400}
             alt="Radio y Cámara"
@@ -266,7 +322,7 @@ export default function Services() {
       <section className="grid grid-cols-1 bg-gray-50 px-4 py-8 md:grid-cols-2 gap-12 px-4 md:px-8 lg:px-10 xl:px-16 mt-10">
         <div className="text-center md:text-left">
           <Image
-            src="/servicios/start.jpg"
+            src="/servicios/engine-start-stop.webp"
             width={700}
             height={400}
             alt="Botón Start/Stop Engine"
