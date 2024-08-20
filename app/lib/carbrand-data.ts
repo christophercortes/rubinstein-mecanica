@@ -41,7 +41,7 @@ export const carBrand: Car[] = [
         id: 'Volkswagen',
         image_url: '/logos/volkswagen.jpg',
     },
-      {
+    {
         id: 'Volvo',
         image_url: '/logos/VOLVO.jpg',
     },
@@ -74,16 +74,16 @@ export const carBrand: Car[] = [
         image_url: '/logos/audi.png',
     },
     {
-        id: 'Bentley',
-        image_url: '/logos/bentley.jpg',
+        id: 'Great Wall',
+        image_url: '/logos/great-wall.png',
     },
     {
         id: 'BMW',
         image_url: '/logos/bmw.jpg',
     },
-      {
-        id: 'Cadillac',
-        image_url: '/logos/cadillac.jpg',
+    {
+        id: 'Changan',
+        image_url: '/logos/changan.png',
     },
     {
         id: 'Chevrolet',
@@ -98,8 +98,8 @@ export const carBrand: Car[] = [
         image_url: '/logos/honda.jpg',
     },
     {
-        id: 'Rolls Royce',
-        image_url: '/logos/rollsroyce.jpg',
+        id: 'Chery',
+        image_url: '/logos/chery.png',
     },
     {
         id: 'Fiat',
@@ -121,7 +121,7 @@ export const carBrand: Car[] = [
         id: 'Infiniti',
         image_url: '/logos/infiniti.jpg',
     },
-      {
+    {
         id: 'Lexus',
         image_url: '/logos/lexus.jpg',
     },
@@ -134,8 +134,8 @@ export const carBrand: Car[] = [
         image_url: '/logos/isuzu.png',
     },
     {
-        id: 'Iveco',
-        image_url: '/logos/iveco.png',
+        id: 'Magindra',
+        image_url: '/logos/mahindra.jpg',
     },
     {
         id: 'Jaguar',
@@ -156,5 +156,33 @@ export const carBrand: Car[] = [
     {
         id: 'Mazda',
         image_url: '/logos/MAZDA.jpg',
+    },
+    {
+        id: 'Baic',
+        image_url: '/logos/baic.png',
+    },
+    {
+        id: 'Jac',
+        image_url: '/logos/jac.jpg',
+    },
+    {
+        id: 'MG',
+        image_url: '/logos/mg-car.png',
+    },
+    {
+        id: 'Haval',
+        image_url: '/logos/haval.png',
+    },
+    {
+        id: 'BYD',
+        image_url: '/logos/byd.webp',
+    },
+    {
+        id: 'Foton',
+        image_url: '/logos/foton.png',
+    },
+    {
+        id: 'Jetour',
+        image_url: '/logos/jetour.png',
     },
 ]
