@@ -31,7 +31,7 @@ export default function ContactForm() {
     };
 
     return (
-        <form onSubmit={sendEmail} className="mt-20 pt-10 mb-20 pb-10 space-y-6 max-w-lg mx-auto">
+        <form onSubmit={sendEmail} className="mt-20 pt-10 pb-10 space-y-6 max-w-lg mx-auto">
             <div className="rounded-lg bg-gray-50 p-6 shadow-md">
                 <h1 className="mb-5 text-3xl font-semibold text-center text-gray-900">
                     ¡CUÉNTANOS SOBRE TU VEHÍCULO!
