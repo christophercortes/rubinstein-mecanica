@@ -42,7 +42,7 @@ export default function Home() {
               src="/home/cars.jpg"
               width={600}
               height={300}
-              alt="Mecánico trabajando"
+              alt="Empresa"
               className="w-full h-auto mb-4"
               layout="responsive"
               priority
@@ -56,7 +56,7 @@ export default function Home() {
               src="/home/car.jpg"
               width={600}
               height={300}
-              alt="Mecánico trabajando"
+              alt="Particulares"
               className="w-full h-auto mb-4"
               layout="responsive"
               priority

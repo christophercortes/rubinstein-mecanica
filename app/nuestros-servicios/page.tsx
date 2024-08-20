@@ -213,7 +213,7 @@ export default function Services() {
           />
         </div>
         <div className="lg:max-w-[600px] lg:mx-auto xl:max-w-[700px] flex flex-col justify-center">
-          <h2 className="text-2xl md:text-3xl font-semibold mb-4">Mantenimiento</h2>
+          <h2 className="text-2xl md:text-3xl font-semibold mb-4">Mantención</h2>
           <h3 className="text-xl font-bold mb-4 text-gray-600">Cambio de Aceite y Filtro</h3>
           <p className="text-lg leading-relaxed text-gray-700">
             Si necesitas realizar el cambio de aceite y filtro, en Rubinstein te asesoramos con el lubricante
