@@ -64,7 +64,55 @@ export default function ContactForm() {
 
                     <div>
                         <label htmlFor="brand" className="block text-sm font-medium text-gray-700">Marca*</label>
-                        <input type="text" id="brand" name="brand" required aria-required="true" className="mt-1 block w-full rounded-md border border-gray-300 p-2.5 text-sm shadow-sm focus:border-blue-500 focus:ring-blue-500" placeholder="Marca del vehículo" />
+                        <select id="brand" name="brand" required aria-required="true" className="mt-1 block w-full rounded-md border border-gray-300 p-2.5 text-sm shadow-sm focus:border-blue-500 focus:ring-blue-500">
+                            <option value="" disabled>Selecciona una opción</option>
+                            <option>Alfa Romeo</option>
+                            <option>Audi</option>
+                            <option>Baic</option>
+                            <option>BMW</option>
+                            <option>BYD</option>
+                            <option>Changan</option>
+                            <option>Chery</option>
+                            <option>Chevrolet</option>
+                            <option>Daihatsu</option>
+                            <option>Daewoo</option>
+                            <option>Dodge</option>
+                            <option>Fiat</option>
+                            <option>Foton</option>
+                            <option>Ford</option>
+                            <option>Great Wall</option>
+                            <option>Haval</option>
+                            <option>Honda</option>
+                            <option>Hummer</option>
+                            <option>Hyindai</option>
+                            <option>Infiniti</option>
+                            <option>Isuzu</option>
+                            <option>Jac</option>
+                            <option>Jaguar</option>
+                            <option>Jeep</option>
+                            <option>Jetour</option>
+                            <option>Kia</option>
+                            <option>Lexus</option>
+                            <option>Magindra</option>
+                            <option>Mazda</option>
+                            <option>Mercedes-Benz</option>
+                            <option>Mitsubishi</option>
+                            <option>MG</option>
+                            <option>Nissan</option>
+                            <option>Opel</option>
+                            <option>Peugeot</option>
+                            <option>Renault</option>
+                            <option>Seat</option>
+                            <option>Skoda</option>
+                            <option>SsanYong</option>
+                            <option>Subary</option>
+                            <option>Suzuki</option>
+                            <option>Tata</option>
+                            <option>Toyota</option>
+                            <option>Volkswagen</option>
+                            <option>Volvo</option>
+
+                        </select>
                     </div>
 
                     <div>
@@ -97,10 +145,10 @@ export default function ContactForm() {
                     </div>
                 </div>
 
-                 <button type="submit" className="mt-6 w-full rounded-md bg-blue-600 py-2 text-white font-semibold shadow-md hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                <button type="submit" className="mt-6 w-full rounded-md bg-blue-600 py-2 text-white font-semibold shadow-md hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
                     Enviar
                 </button>
-                
+
                 {status && (
                     <div className={`mt-4 p-4 text-center ${status.includes("Error") ? "text-red-600" : "text-green-600"}`}>
                         {status}

@@ -30,7 +30,7 @@ export const carBrand: Car[] = [
         image_url: '/logos/OPEL.png',
     },
     {
-        id: 'Mercedes',
+        id: 'Mercedes-Benz',
         image_url: '/logos/MERCEDES-BENZ.jpg',
     },
     {
@@ -50,11 +50,7 @@ export const carBrand: Car[] = [
         image_url: '/logos/ALFARROMEO.jpg',
     },
     {
-        id: 'Aston Martin',
-        image_url: '/logos/astonmartin.webp',
-    },
-    {
-        id: 'Mitsubishoi',
+        id: 'Mitsubishi',
         image_url: '/logos/MITSUBISHI.jpg',
     },
     {
