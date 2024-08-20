@@ -21,7 +21,7 @@ export const homeBanner: Carousel[] = [
     },
     {
         id: "revision",
-        imageUrl: "/home/servicios/revision.png",
+        imageUrl: "/home/servicios/prt.jpg",
         title: "Revisión Técnica",
         description: "Chequeo y Trámite",
     },
@@ -39,7 +39,7 @@ export const homeBanner: Carousel[] = [
     },
      {
         id: "mantenimiento",
-        imageUrl: "/home/servicios/mantenimiento.jpg",
+        imageUrl: "/home/servicios/mantencion.jpg",
         title: "Mantenimiento",
         description: "Cambio de Aceite y Filtro",
     },
@@ -65,7 +65,7 @@ export const homeBanner: Carousel[] = [
         id: "radio",
         imageUrl: "/home/servicios/radio.jpg",
         title: "Radio y Cámara",
-        description: "Instalación de Radio Android y Cámara de Retroceso",
+        description: "Instalación de Radio y Cámara",
     },
           {
         id: "boton",

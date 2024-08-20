@@ -13,7 +13,7 @@ export default function Home() {
     <main className="mt-12 pt-20 px-4 md:px-8 lg:px-12 bg-white text-black">
       {/* Header Section */}
       <div className="flex justify-center mb-12">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center tracking-wide">
           Rubinstein Mecánica Automotriz
         </h1>
       </div>
@@ -26,10 +26,10 @@ export default function Home() {
 
       {/* Additional Information Section */}
       <section className="max-w-screen-xl mx-auto px-4 md:px-6 lg:px-8 mb-12">
-        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold mb-4 text-center">
+        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold mb-4 text-center tracking-wide">
           Atención y Mantención Personalizada
         </h2>
-        <p className="leading-relaxed mb-8 text-center text-sm sm:text-base md:text-lg lg:text-xl">
+        <p className="leading-relaxed mb-8 text-center text-sm sm:text-base md:text-lg lg:text-xl tracking-wide">
           En Rubinstein nos encargamos de la reparación y mantención de su vehículo, con garantía por los
           trabajos realizados. Hacemos seguimiento de mantenciones, asesoramiento en mecánica, repuestos,
           lubricantes, Scanner y accesorios para mejorar la seguridad de su vehículo. Ofrecemos convenios de atención preferencial
@@ -42,8 +42,8 @@ export default function Home() {
               src="/home/cars.jpg"
               width={600}
               height={300}
-              alt="Empresa"
-              className="w-full h-auto mb-4"
+              alt="Imagen de flota de coches para empresas"
+              className="w-full h-auto mb-4 rounded-lg shadow-md"
               layout="responsive"
               priority
             />
@@ -56,8 +56,8 @@ export default function Home() {
               src="/home/car.jpg"
               width={600}
               height={300}
-              alt="Particulares"
-              className="w-full h-auto mb-4"
+              alt="Imagen de un coche particular"
+              className="w-full h-auto mb-4 rounded-lg shadow-md"
               layout="responsive"
               priority
             />
@@ -75,8 +75,8 @@ export default function Home() {
               src="/whatsapp.png"
               width={50}
               height={50}
-              alt="WhatsApp"
-              className="hover:opacity-80 transition"
+              alt="Contacta con nosotros en WhatsApp"
+              className="hover:opacity-80 transition-transform transform hover:scale-110 hover:rotate-5"
             />
             <span className="sr-only">Contact Us on WhatsApp</span>
         </Link>
