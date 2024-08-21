@@ -48,7 +48,7 @@ export default function AboutUs() {
       {/* Details Banner */}
       {showDetails && (
         <div className="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50">
-          <div className="bg-white p-6 rounded-lg shadow-lg w-3/4 md:w-1/2">
+          <div className="bg-white p-6 rounded-lg shadow-lg max-w-md mx-auto">
             <h2 className="text-2xl font-semibold mb-4">Rodrigo Sáez Madrid</h2>
             <Image
               src="/acerca/rodrigo.jpg"
@@ -79,20 +79,22 @@ export default function AboutUs() {
         <h3 className="text-xl md:text-2xl lg:text-3xl">Todos los trabajos con sello de garantía</h3>
       </div>
 
-       {/* WhatsApp Icon */}
+      {/* WhatsApp Icon */}
       <div className="fixed bottom-4 right-4 z-50">
-        <Link href="https://wa.me/56956608734"
+        <Link 
+          href="https://wa.me/56956608734"
           target="_blank"
-          rel="nooper noreferrer"
-          className="block">
-            <Image
-              src="/whatsapp.png"
-              width={50}
-              height={50}
-              alt="Contacta con nosotros en WhatsApp"
-              className="hover:opacity-80 transition-transform transform hover:scale-110 hover:rotate-5"
-            />
-            <span className="sr-only">Contact Us on WhatsApp</span>
+          rel="noopener noreferrer"
+          className="block"
+        >
+          <Image
+            src="/whatsapp.png"
+            width={50}
+            height={50}
+            alt="Contacta con nosotros en WhatsApp"
+            className="hover:opacity-80 transition-transform transform hover:scale-110 hover:rotate-5"
+          />
+          <span className="sr-only">Contact Us on WhatsApp</span>
         </Link>
       </div>
     </main>
