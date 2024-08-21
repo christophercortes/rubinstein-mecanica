@@ -7,63 +7,6 @@ export default function Services() {
       <section className="text-center mb-10">
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8">Nuestros Servicios</h1>
       </section>
-
-      {/* Icons Section */}
-      <section className="grid grid-cols-2 md:grid-cols-4 gap-8 px-4 md:px-8 lg:px-10 xl:px-16 mt-10">
-        <div className="text-center">
-          <Link href="#grua"
-            className="block text-gray-600 hover:text-gray-800">
-            <Image
-              src="/servicios/iconos/crane.png"
-              alt="grua"
-              width={80}
-              height={80}
-              className="w-12 h-12 mx-auto mb-4"
-            />
-            <p>Servicios de Grúa</p>
-          </Link>
-        </div>
-        <div className="text-center">
-          <Link href="#scanner"
-            className="block text-gray-600 hover:text-gray-800">
-            <Image
-              src="/servicios/iconos/scanner.png"
-              alt="scanner"
-              width={80}
-              height={80}
-              className="w-12 h-12 mx-auto mb-4"
-            />
-            <p>Servicio Scanner</p>
-          </Link>
-        </div>
-        <div className="text-center">
-          <Link href="#pintura"
-            className="block text-gray-600 hover:text-gray-800">
-            <Image
-              src="/servicios/iconos/paintcan.png"
-              alt="pintura"
-              width={80}
-              height={80}
-              className="w-12 h-12 mx-auto mb-4"
-            />
-            <p>Servicios de Pintura</p>
-          </Link>
-        </div>
-        <div className="text-center">
-          <Link href="#revision"
-            className="block text-gray-600 hover:text-gray-800">
-            <Image
-              src="/servicios/iconos/car_repair.png"
-              alt="revision"
-              width={80}
-              height={80}
-              className="w-12 h-12 mx-auto mb-4"
-            />
-            <p>Revisión Técnica</p>
-          </Link>
-        </div>     
-      </section>
-
       <section id="grua" className="grid grid-cols-1 bg-gray-50 px-4 py-8 md:grid-cols-2 gap-12 px-4 md:px-8 lg:px-10 xl:px-16 mt-16">
         <div className="text-center md:text-left">
           <Image
