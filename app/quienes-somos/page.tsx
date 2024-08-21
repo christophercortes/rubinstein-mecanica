@@ -48,8 +48,8 @@ export default function AboutUs() {
       {/* Details Banner */}
       {showDetails && (
         <div className="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50">
-          <div className="bg-white p-6 rounded-lg shadow-lg max-w-md mx-auto">
-            <h2 className="text-2xl font-semibold mb-4">Rodrigo Sáez Madrid</h2>
+          <div className="bg-white p-6 rounded-lg shadow-lg max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl mx-auto">
+            <h2 className="text-xl sm:text-2xl font-semibold mb-4">Rodrigo Sáez Madrid</h2>
             <Image
               src="/acerca/rodrigo.jpg"
               width={300}
@@ -58,11 +58,11 @@ export default function AboutUs() {
               className="w-full h-auto object-cover rounded-lg mb-4"
               loading="lazy"
             />
-            <p className="text-lg leading-relaxed mb-4">
+            <p className="text-base sm:text-lg leading-relaxed mb-4">
               Rodrigo Sáez Madrid es un Técnico Universitario en Mecánica Automotriz y Autotrónica de la Universidad Técnica Federico
               Santa Maria con más de 15 años de experiencia en el campo. Su compromiso con la calidad y la atención al detalle garantiza
-              que cada vehículo reciba el mejor cuidado y reparación posible.
-              Su experiencia y habilidades son fundamentales para ofrecer un servicio excepcional en nuestro taller.
+              que cada vehículo reciba el mejor cuidado y reparación posible. Su experiencia y habilidades son fundamentales para ofrecer
+              un servicio excepcional en nuestro taller.
             </p>
             <button
               onClick={handleToggleDetails}
@@ -74,6 +74,7 @@ export default function AboutUs() {
         </div>
       )}
 
+
       <div className="mt-12 mb-12 text-center bg-navy-blue bg-opacity-40 text-white py-8 px-6 rounded-lg shadow-xl">
         <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-4">Todos los Vehículos con Checkout de Garantía</h2>
         <h3 className="text-xl md:text-2xl lg:text-3xl">Todos los trabajos con sello de garantía</h3>
@@ -81,7 +82,7 @@ export default function AboutUs() {
 
       {/* WhatsApp Icon */}
       <div className="fixed bottom-4 right-4 z-50">
-        <Link 
+        <Link
           href="https://wa.me/56956608734"
           target="_blank"
           rel="noopener noreferrer"

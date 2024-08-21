@@ -54,8 +54,8 @@ export default function ContactForm() {
                     </div>
 
                     <div>
-                        <label htmlFor="plate" className="block text-sm font-medium text-gray-700">Escribe tu Patente*</label>
-                        <input type="text" id="plate" name="plate" required aria-required="true" className="mt-1 block w-full rounded-md border border-gray-300 p-2.5 text-sm shadow-sm focus:border-blue-500 focus:ring-blue-500" placeholder="Patente del vehículo" />
+                        <label htmlFor="plate" className="block text-sm font-medium text-gray-700">Cilindrada del Auto*</label>
+                        <input type="text" id="plate" name="plate" required aria-required="true" className="mt-1 block w-full rounded-md border border-gray-300 p-2.5 text-sm shadow-sm focus:border-blue-500 focus:ring-blue-500" placeholder="Cilindrada" />
                     </div>
 
                     <div>

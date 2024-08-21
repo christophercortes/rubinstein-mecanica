@@ -49,7 +49,7 @@ const Carousel: React.FC<CarouselProps> = ({ slides }) => {
                   priority
                 />
               </div>
-              <div className="absolute bottom-0 left-0 bg-black bg-opacity-50 text-white p-4">
+              <div className="absolute bottom-10 left-0 bg-black bg-opacity-50 text-white p-4 rounded-t-lg">
                 <h3 className="text-xl font-bold">{slide.title}</h3>
                 <p>{slide.description}</p>
               </div>
@@ -75,7 +75,7 @@ const Carousel: React.FC<CarouselProps> = ({ slides }) => {
           </svg>
         </button>
       </div>
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-3">
+      <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-3">
         {slides.map((_, index) => (
           <button
             key={index}

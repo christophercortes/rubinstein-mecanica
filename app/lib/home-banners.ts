@@ -65,7 +65,7 @@ export const homeBanner: Carousel[] = [
         id: "radio",
         imageUrl: "/home/servicios/radio.jpg",
         title: "Radio y Cámara",
-        description: "Instalación de Radio y Cámara",
+        description: "Instalación de Radio Android (táctil) y Cámara de retroceso",
     },
           {
         id: "boton",
