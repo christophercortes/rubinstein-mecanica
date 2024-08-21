@@ -26,7 +26,7 @@ const Carousel: React.FC<CarouselProps> = ({ slides }) => {
   };
 
   useEffect(() => {
-    const interval = setInterval(goToNextSlide, 3000); // Change slides every 3 seconds
+    const interval = setInterval(goToNextSlide, 4000); // Change slides every 3 seconds
 
     return () => clearInterval(interval); // Clear interval on component unmount
   }, [goToNextSlide]);
