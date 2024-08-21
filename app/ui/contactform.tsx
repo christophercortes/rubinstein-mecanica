@@ -30,12 +30,8 @@ export default function ContactForm() {
     };
 
     return (
-        <form onSubmit={sendEmail} className="mt-20 pb-10 space-y-6 max-w-lg mx-auto">
+        <form onSubmit={sendEmail} className="pb-10 space-y-6 max-w-lg mx-auto">
             <div className="rounded-lg bg-gray-200 p-6 shadow-md">
-                <h1 className="mb-5 text-3xl font-semibold text-center text-gray-900">
-                    ¡CUÉNTANOS SOBRE TU VEHÍCULO!
-                </h1>
-
                 <div className="space-y-4">
                     <div>
                         <label htmlFor="name" className="block text-sm font-medium text-gray-700">Nombre*</label>
@@ -111,7 +107,6 @@ export default function ContactForm() {
                             <option>Toyota</option>
                             <option>Volkswagen</option>
                             <option>Volvo</option>
-
                         </select>
                     </div>
 
@@ -145,7 +140,7 @@ export default function ContactForm() {
                     </div>
                 </div>
 
-                <button type="submit" className="mt-6 w-full rounded-md bg-blue-600 py-2 text-white font-semibold shadow-md hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                <button type="submit" className="mt-6 w-full rounded-md bg-blue-700 py-2 text-white font-semibold shadow-md hover:bg-blue-800 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
                     Enviar
                 </button>
 

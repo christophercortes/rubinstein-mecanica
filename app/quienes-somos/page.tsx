@@ -1,13 +1,16 @@
-import Image from "next/image";
-import Link from "next/link";
+'use client';
 
-import { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: 'Quienes Somos',
-};
+import Image from 'next/image';
+import Link from 'next/link';
+import { useState } from 'react';
 
 export default function AboutUs() {
+  const [showDetails, setShowDetails] = useState(false);
+
+  const handleToggleDetails = () => {
+    setShowDetails(!showDetails);
+  };
+
   return (
     <main className="mt-10 pt-20 px-4 md:px-8 lg:px-16 bg-gray-50">
       <div className="max-w-4xl mx-auto">
@@ -19,7 +22,7 @@ export default function AboutUs() {
               src="/acerca/mechanic.jpg"
               width={700}
               height={400}
-              alt="Rubinstein Logo"
+              alt="Mechanic"
               className="w-full h-auto object-cover rounded-lg"
               loading="lazy"
             />
@@ -27,8 +30,14 @@ export default function AboutUs() {
           <div className="md:w-1/2 p-4">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-4">Trabajos Garantizados</h2>
             <p className="text-lg md:text-xl lg:text-2xl leading-relaxed">
-              Contamos con un dotación de mecánicos calificados con una vasta experiencia, además cada vehículo antes
-              de salir del taller se vuelve a chequear por el mecánico jefe <b>Rodrigo Sáez Madrid</b>, Técnico Universitario en Mecánica
+              Contamos con un dotación de mecánicos calificados con una vasta experiencia. Cada vehículo antes
+              de salir del taller se vuelve a chequear por el mecánico jefe{" "}
+              <button
+                onClick={handleToggleDetails}
+                className="font-bold text-blue-600 hover:underline focus:outline-none"
+              >
+                Rodrigo Sáez Madrid
+              </button>, Técnico Universitario en Mecánica
               Automotriz y Autotrónica, con más de 15 años en el rubro, para asegurarnos de entregar un servicio de calidad
               y con garantía. Características que identifican a nuestro taller, dando así confianza a nuestros clientes.
             </p>
@@ -36,10 +45,37 @@ export default function AboutUs() {
         </div>
       </div>
 
+      {/* Details Banner */}
+      {showDetails && (
+        <div className="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50">
+          <div className="bg-white p-6 rounded-lg shadow-lg w-3/4 md:w-1/2">
+            <h2 className="text-2xl font-semibold mb-4">Rodrigo Sáez Madrid</h2>
+            <Image
+              src="/acerca/rodrigo.jpg"
+              width={300}
+              height={200}
+              alt="Rodrigo Sáez Madrid"
+              className="w-full h-auto object-cover rounded-lg mb-4"
+              loading="lazy"
+            />
+            <p className="text-lg leading-relaxed mb-4">
+              Rodrigo Sáez Madrid es un Técnico Universitario en Mecánica Automotriz y Autotrónica con más de 15 años de experiencia en el campo. Su compromiso con la calidad y la atención al detalle garantiza que cada vehículo reciba el mejor cuidado y reparación posible. Su experiencia y habilidades son fundamentales para ofrecer un servicio excepcional en nuestro taller.
+            </p>
+            <button
+              onClick={handleToggleDetails}
+              className="mt-4 w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 focus:outline-none"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      )}
+
       <div className="mt-12 mb-12 text-center bg-navy-blue text-white py-8 px-4 rounded-lg shadow-md">
         <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-4">Todos los Vehículos con Checkout de Garantía</h2>
         <h3 className="text-xl md:text-2xl lg:text-3xl">Todos los trabajos con sello de garantía</h3>
       </div>
+
       {/* WhatsApp Icon */}
       <div className="fixed bottom-4 right-4 z-50">
         <Link href="https://wa.me/56954316358">
