@@ -70,7 +70,10 @@ export default function Home() {
 
       {/* WhatsApp Icon */}
       <div className="fixed bottom-4 right-4 z-50">
-        <Link href="https://wa.me/56956608734">
+        <Link href="https://wa.me/56956608734"
+          target="_blank"
+          rel="nooper noreferrer"
+          className="block">
             <Image
               src="/whatsapp.png"
               width={50}

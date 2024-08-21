@@ -340,19 +340,22 @@ export default function Services() {
         </div>
       </section>
       <div className="border-t border-gray-300 mt-8 mb-8"></div>
-      {/* WhatsApp Icon */}
+     {/* WhatsApp Icon */}
       <div className="fixed bottom-4 right-4 z-50">
-        <Link href="https://wa.me/56954316358">
-          <Image
-            src="/whatsapp.png"
-            width={50}
-            height={50}
-            alt="WhatsApp"
-            className="hover:opacity-80 transition"
-          />
+        <Link href="https://wa.me/56956608734"
+          target="_blank"
+          rel="nooper noreferrer"
+          className="block">
+            <Image
+              src="/whatsapp.png"
+              width={50}
+              height={50}
+              alt="Contacta con nosotros en WhatsApp"
+              className="hover:opacity-80 transition-transform transform hover:scale-110 hover:rotate-5"
+            />
+            <span className="sr-only">Contact Us on WhatsApp</span>
         </Link>
       </div>
-
     </main>
   );
 }
