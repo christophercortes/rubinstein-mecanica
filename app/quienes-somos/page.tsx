@@ -34,7 +34,7 @@ export default function AboutUs() {
               de salir del taller se vuelve a chequear por el mecánico jefe{" "}
               <button
                 onClick={handleToggleDetails}
-                className="font-bold text-blue-600 hover:underline focus:outline-none"
+                className="font-bold text-blue-800 hover:underline focus:outline-none"
               >
                 Rodrigo Sáez Madrid
               </button>, Técnico Universitario en Mecánica
@@ -59,11 +59,14 @@ export default function AboutUs() {
               loading="lazy"
             />
             <p className="text-lg leading-relaxed mb-4">
-              Rodrigo Sáez Madrid es un Técnico Universitario en Mecánica Automotriz y Autotrónica con más de 15 años de experiencia en el campo. Su compromiso con la calidad y la atención al detalle garantiza que cada vehículo reciba el mejor cuidado y reparación posible. Su experiencia y habilidades son fundamentales para ofrecer un servicio excepcional en nuestro taller.
+              Rodrigo Sáez Madrid es un Técnico Universitario en Mecánica Automotriz y Autotrónica de la Universidad Técnica Federico
+              Santa Maria con más de 15 años de experiencia en el campo. Su compromiso con la calidad y la atención al detalle garantiza
+              que cada vehículo reciba el mejor cuidado y reparación posible.
+              Su experiencia y habilidades son fundamentales para ofrecer un servicio excepcional en nuestro taller.
             </p>
             <button
               onClick={handleToggleDetails}
-              className="mt-4 w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 focus:outline-none"
+              className="mt-4 w-full bg-blue-700 text-white py-2 rounded-md hover:bg-blue-800 focus:outline-none"
             >
               Cerrar
             </button>
@@ -71,7 +74,7 @@ export default function AboutUs() {
         </div>
       )}
 
-      <div className="mt-12 mb-12 text-center bg-navy-blue text-white py-8 px-4 rounded-lg shadow-md">
+      <div className="mt-12 mb-12 text-center bg-navy-blue bg-opacity-40 text-white py-8 px-6 rounded-lg shadow-xl">
         <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-4">Todos los Vehículos con Checkout de Garantía</h2>
         <h3 className="text-xl md:text-2xl lg:text-3xl">Todos los trabajos con sello de garantía</h3>
       </div>
